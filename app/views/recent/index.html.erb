@@ -1,0 +1,7 @@
+<h1>Recent User Agent Strings:</h1>
+
+<ul>
+<% UserAgent.recent.each do |row| %>
+	<li><a href="/ua/<%= row.user_agent %>"><%= row.user_agent %></a></li>
+<% end %>
+</ul>

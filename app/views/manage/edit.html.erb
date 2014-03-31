@@ -1,0 +1,46 @@
+<h1>Editing User Agent String:</h1> 
+<h4 class="ua thin success"><a href="/ua/<%= @ua %>"><%= @ua %></a></h4>
+
+<div class="span-17 breakdown">
+<h5>The breakdown</h5>
+
+<table width="96%">
+<caption align="bottom"><p>Explanation of what each part of <%= (@notmine) ? 'the' : 'your' %> User Agent string represents.</p></caption>
+<tr>
+	<th>Part</th>
+	<th>Type</th>
+	<th>Description</th>
+	<th>Version</th>	
+</tr>
+<% UaPart.breakdown(@ua).each do |i| %>
+<tr>
+	<td><b><%= i[:part] %><b></td>
+	<td><%= i[:part_type] %></td>
+	<td><%= i[:description] %></td>
+	<td><%= i[:version] %></td>
+
+</tr>
+<% end %>
+</table>
+
+<% 
+#p>Hits on this user agent: < %= @hits % ></p
+%>
+
+</div>
+
+<div class="span-6 bigidea">
+
+  <h5>What is a "User Agent"?</h5>
+  <p>A User Agent is a short string that web browsers and other applications send to identify themselves to web servers. </p>
+  <p>Unfortunately, most browsers falsify part of their User-Agent header in an attempt to be compatible with more web servers.</p>
+  
+	<h5>Tips</h5>
+
+	<ul>
+    <li>Click on your user-agent string (in the green box) to get a link that you can share with other people.</li>
+    <li>Visit <code>whatsmyua.com/ua/[any-user-agent-string]</code>, the site will give you a breakdown for that string.</li>
+    <!-- li>If something is missing or wrong, or you have any other ideas for improving the site, <a href="http://nfriedly.com/contact/">click here to let me know</a>.</li -->
+	</ul>
+  
+</div>

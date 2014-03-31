@@ -1,0 +1,48 @@
+body {
+	background: #334969;
+}
+
+.main {
+	background: white url(/images/stripe-container-bg.png) bottom left repeat-x;
+	border: 3px solid white;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	padding:0 10px 18px;
+}
+
+.ua {
+	line-height: 160%;
+}
+
+.ua a {
+	text-decoration: none;
+}
+
+.ua a:hover {
+	text-decoration: underline;
+}
+
+.footer {
+	padding-top:35px;
+	text-align: center;
+	color:white;
+}
+.footer a:link, .footer a:visited, .footer a:hover {
+	color: white;
+	background: none;
+	padding: 0;
+}
+
+ul {
+	margin-left:0;
+	padding-left:20px;
+}
+li {
+	margin-bottom:15px;
+}
+
+code {
+	background:none repeat scroll 0 0 #E6EFC2;
+	color:#264409;
+	padding:2px;
+}

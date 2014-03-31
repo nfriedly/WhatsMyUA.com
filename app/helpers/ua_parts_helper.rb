@@ -1,0 +1,2 @@
+module UaPartsHelper
+end

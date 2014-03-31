@@ -1,0 +1,7 @@
+<h1>User Agent Strings:</h1>
+
+<ul>
+<% UserAgent.find(:all).each do |row| %>
+	<li><a href="/manage/<%= row.user_agent %>"><%= row.user_agent || '[blank]' %></a> (<%= row.hits %>)</li>
+<% end %>
+</ul>
